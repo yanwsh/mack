@@ -211,8 +211,7 @@ function parsePhrasingContent(
       accumulator.push(imageBlock);
     } catch (error) {
       // Skip images with invalid URLs instead of throwing
-      // This allows graceful degradation
-      console.warn(`Skipping image with invalid URL: ${element.href}`);
+      // This allows graceful degradation - silently skip
     }
   } else if (element.type === 'link') {
     // Check if this is a file link - check both URL and link text
