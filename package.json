@@ -33,7 +33,11 @@
     "gfm",
     "slack"
   ],
-  "author": "Instantish",
+  "author": "Matthew Herod <matthew.herod@gmail.com>",
+  "contributors": [
+    "Instantish (original author)",
+    "Fabric Team (tryfabric/mack)"
+  ],
   "license": "MIT",
   "dependencies": {
     "@slack/types": "^2.1.0",
