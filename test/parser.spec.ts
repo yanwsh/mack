@@ -1,5 +1,6 @@
 import * as slack from '../src/slack';
 import {parseBlocks} from '../src/parser/internal';
+import '../src/extensions';
 import {marked} from 'marked';
 
 describe('parser', () => {
@@ -9,6 +10,14 @@ describe('parser', () => {
 
     const expected = [slack.section('*a ~b~* c<https://example.com|_d_> ')];
 
+    expect(actual).toStrictEqual(expected);
+  });
+
+  it('should parse quote', () => {
+    const tokens = marked.lexer("I'll help you test the code.");
+    const actual = parseBlocks(tokens);
+
+    const expected = [slack.section("I'll help you test the code.")];
     expect(actual).toStrictEqual(expected);
   });
 

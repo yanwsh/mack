@@ -2,11 +2,11 @@
 
 > Convert Markdown to native Slack BlockKit blocks with rich formatting support
 
-[![Node.js CI](https://github.com/mherod/mack/actions/workflows/ci.yml/badge.svg)](https://github.com/mherod/mack/actions/workflows/ci.yml)
+[![Node.js CI](https://github.com/yanwsh/mack/actions/workflows/ci.yml/badge.svg)](https://github.com/yanwsh/mack/actions/workflows/ci.yml)
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
-[![npm version](https://img.shields.io/npm/v/@mherod/mack.svg)](https://www.npmjs.com/package/@mherod/mack)
+[![npm version](https://img.shields.io/npm/v/@yanwsh/mack.svg)](https://www.npmjs.com/package/@yanwsh/mack)
 
-> **Note**: This is a fork of the original [Mack project by Fabric](https://github.com/tryfabric/mack), maintained by [@mherod](https://github.com/mherod) with enhanced features and native Slack block support.
+> **Note**: This is a fork of the original [Mack project by Fabric](https://github.com/tryfabric/mack), maintained by [@yanwsh](https://github.com/yanwsh) with enhanced features and native Slack block support.
 
 A TypeScript library for parsing Markdown and GitHub Flavoured Markdown into Slack's BlockKit format. Mack leverages native Slack blocks for superior rendering quality.
 
@@ -42,13 +42,13 @@ A TypeScript library for parsing Markdown and GitHub Flavoured Markdown into Sla
 ## Installation
 
 ```bash
-npm install @mherod/mack
+npm install @yanwsh/mack
 ```
 
 ## Quick Start
 
 ```typescript
-import {markdownToBlocks} from '@mherod/mack';
+import {markdownToBlocks} from '@yanwsh/mack';
 
 const markdown = `
 # Hello World
@@ -235,7 +235,7 @@ Contributions are welcome! Please ensure:
 ## Credits
 
 - Original project by [Fabric](https://github.com/tryfabric/mack)
-- Enhanced and maintained by [Matthew Herod](https://github.com/mherod)
+- Enhanced and maintained by [yanwsh](https://github.com/yanwsh)
 - Built with [marked](https://marked.js.org/) for Markdown parsing
 
 ## License

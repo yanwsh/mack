@@ -1,4 +1,5 @@
 import type {KnownBlock} from '@slack/types';
+import './extensions';
 import {parseBlocks} from './parser/internal';
 import type {ParsingOptions} from './types';
 import {marked} from 'marked';
